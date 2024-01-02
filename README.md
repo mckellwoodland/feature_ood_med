@@ -15,11 +15,6 @@ docker build -t feature_ood_med .
 
 Download the data from the Medical Segmentation Decathlon<sup>1</sup>. Put all the tar files in one folder.
 
-Build the docker container.
-```
-docker build -t feature_ood_med .
-```
-
 Unzip the tar files.
 ```
 docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess_msd.py --in_dir {IN_DIR} --out_dir {OUT_DIR}
