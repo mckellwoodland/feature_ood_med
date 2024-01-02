@@ -22,9 +22,7 @@ docker build -t feature_ood_med .
 
 Unzip the tar files.
 ```
-docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess_msd.py \
-  --in_dir {IN_DIR} \
-  --out_dir {OUT_DIR}
+docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess_msd.py --in_dir {IN_DIR} --out_dir {OUT_DIR}
 ```
 # Acknowledgments
 
