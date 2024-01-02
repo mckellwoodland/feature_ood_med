@@ -1,5 +1,4 @@
-# miccai_paper2
-Official repository for the paper entitled "Feature-based Out-of-Distribution Detection for Medical Imaging Segmentation"
+# Feature-based Out-of-Distribution Detection for Medical Imaging Segmentation - Official Repository
 
 **Feature-based Out-of-Distribution Detection for Medical Imaging Segmentation**
 McKell Woodland, Ankit B. Patel, & Kristy K. Brock
