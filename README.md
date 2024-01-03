@@ -21,6 +21,8 @@ docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess
 ```
 # Acknowledgments
 
+Research reported in this publication was supported in part by the Tumor Measurement Initiative through the MD Anderson Strategic Initiative Development Program (STRIDE), the Helen Black Image Guided Fund, the Image Guided Cancer Therapy Research Program at The University of Texas MD Anderson Cancer Center, a generous gift from the Apache Corporation, and the National Cancer Institute of the National Institutes of Health under award numbers R01CA221971, P30CA016672, and R01CA235564.
+
 # Citation
 
 # References
