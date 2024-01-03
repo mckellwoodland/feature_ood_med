@@ -13,7 +13,7 @@ docker build -t feature_ood_med .
 
 # Data
 
-Download the data from the Medical Segmentation Decathlon<sup>1</sup>. Put all the tar files in one folder.
+Download the data from the [Medical Segmentation Decathlon](http://medicaldecathlon.com/)<sup>1</sup>. Put all the tar files in one folder.
 
 Unzip the tar files.
 ```
@@ -24,3 +24,5 @@ docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess
 # Citation
 
 # References
+
+1. A. L. Simpson *et al.* A large annotated medical image dataset for the development and evaluation of segmentation algorithms. 2019, arXiv:1902.09063.
