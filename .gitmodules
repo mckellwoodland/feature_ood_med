@@ -1,3 +1,6 @@
 [submodule "research-contributions"]
 	path = research-contributions
 	url = https://github.com/mckellwoodland/research-contributions
+[submodule "CLIP-Driven-Universal-Model"]
+	path = CLIP-Driven-Universal-Model
+	url = https://github.com/mckellwoodland/CLIP-Driven-Universal-Model
