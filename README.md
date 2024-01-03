@@ -19,6 +19,14 @@ Unzip the tar files.
 ```
 docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess_msd.py --in_dir {IN_DIR} --out_dir {OUT_DIR}
 ```
+
+```
+usage: preprocess_msd.py [-h] --in_dir IN_DIR --out_dir OUT_DIR
+
+Required Arguments:
+  --in_dir IN_DIR    Path to directory with tar files.
+  --out_dir OUT_DIR  Path to directory to put unzipped files into.
+```
 # Acknowledgments
 
 Research reported in this publication was supported in part by the Tumor Measurement Initiative through the MD Anderson Strategic Initiative Development Program (STRIDE), the Helen Black Image Guided Fund, the Image Guided Cancer Therapy Research Program at The University of Texas MD Anderson Cancer Center, a generous gift from the Apache Corporation, and the National Cancer Institute of the National Institutes of Health under award numbers R01CA221971, P30CA016672, and R01CA235564.
