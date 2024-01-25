@@ -12,8 +12,8 @@ import tqdm
 parser = argparse.ArgumentParser()
 parser._action_groups.pop()
 required = parser.add_argument_group('Required Arguments')
-required.add_argument('--in_dir', required=True, type=str, help='Path to directory with tar files.')
-required.add_argument('--out_dir', required=True, type=str, help='Path to directory to put unzipped files into.')
+required.add_argument('--in_dir', required=True, type=str, help='Path to the directory with tar files.')
+required.add_argument('--out_dir', required=True, type=str, help='Path to the directory to put unzipped files into.')
 args = parser.parse_args()
 in_dir = args.in_dir
 out_dir = args.out_dir
