@@ -1,11 +1,12 @@
-# Feature-based Out-of-Distribution Detection for Medical Imaging Segmentation - Official Repository
+# Out-of-Distribution Detection for Medical Imaging Segmentation Foundation Models - Official Repository
 
-**Feature-based Out-of-Distribution Detection for Medical Imaging Segmentation**
+**Out-of-Distribution Detection for Medical Imaging Segmentation Foundation Models**
+
 McKell Woodland, Ankit B. Patel, & Kristy K. Brock
 
-Abstract: *The ability to detect when medical imaging segmentation models have performed poorly is crucial for their deployment in clinical settings. While methods such as MC dropout and ensembling perform well, they require modifications to the training scheme and are expensive at inference. The current work predicts inadequate performance using the segmentation model’s features, requiring no training scheme modifications, and incurring minimal cost. Mahalanobis distance, Gram matrices, and spectral analysis were applied to dimensionality-reduced features extracted from all encoding layers of 3 segmentation architectures (nnU-net, Swin Transformer, 3D U-net) trained on 10 segmentation datasets (MSD).*
+Abstract: *Foundation models, trained on vast amounts of data and applied to numerous downstream tasks, are achieving state-of-the-art results on a wide variety of medical imaging segmentation tasks. For robust clinical deployment, detecting when segmentation models are presented with scans beyond their scope is critical. However, most foundation segmentation models do not have in-built out-of-distribution (OOD) detection functionality. Furthermore, the post hoc application of OOD detection techniques to foundation segmentation models is challenging because many techniques require training scheme modifications or access to the training dataset. This work performed OOD detection using the features of the foundation segmentation models, requiring neither training scheme modifications nor access to the entire training dataset and incurring minimal cost. The Mahalanobis distance, Gram matrices, and spectral analysis were applied to dimensionality-reduced features extracted from all encoding layers of five foundation models (SegVol, CLIP-Driven Universal Model, Multi-Talent, UniSeg, and STU-Net) evaluated on 20 computed tomography segmentation tasks.*
 
-# Docker
+<!--# Docker
 
 ```
 docker build -t feature_ood_med .
@@ -24,20 +25,21 @@ docker run -it --rm -v "$PWD":/workspace feature_ood_med python utils/preprocess
 usage: preprocess_msd.py [-h] --in_dir IN_DIR --out_dir OUT_DIR
 
 Required Arguments:
-  --in_dir IN_DIR    Path to directory with tar files.
-  --out_dir OUT_DIR  Path to directory to put unzipped files into.
+  --in_dir IN_DIR    Path to the directory with tar files.
+  --out_dir OUT_DIR  Path to the directory to put unzipped files into.
 ```
-
+-->
 # Segmentation Models
+
+## SegVol
+
 ## CLIP-Driven Universal Model
 
-## Swin UNETR
+## Multi-Talent
 
-## DiNTS
+## UniSeg
 
-## nnU-net
-
-## Model Genesis
+## STU-Net
 
 # Acknowledgments
 
@@ -47,4 +49,4 @@ Research reported in this publication was supported in part by the Tumor Measure
 
 # References
 
-1. A. L. Simpson *et al.* A large annotated medical image dataset for the development and evaluation of segmentation algorithms. 2019, arXiv:1902.09063.
+<!--1. A. L. Simpson *et al.* A large annotated medical image dataset for the development and evaluation of segmentation algorithms. 2019, arXiv:1902.09063.-->
