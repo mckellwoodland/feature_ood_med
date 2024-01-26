@@ -33,6 +33,20 @@ Required Arguments:
 
 ## SegVol
 
+This repository contains a fork of the official SegVol repository as a submodule. To use our code, move to the `feature_ood_med` branch of the submodule.
+
+### Docker
+```
+docker build -t seg_vol SegVol/.
+```
+```
+docker run -it --rm -v $(pwd):/workspace seg_vol
+```
+
+### Inference
+
+If your system does not have internet access, download [OpenAI's CLIP model from HuggingFace](https://huggingface.co/openai/clip-vit-base-patch32) and place the files in `SegVol/model/CLIP`. If your system does have internet access, you can delete the `clip_ckpt` argument from the `SegVol/script/inference_demo.sh` script.
+
 ## CLIP-Driven Universal Model
 
 ## Multi-Talent
