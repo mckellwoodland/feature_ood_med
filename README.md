@@ -33,7 +33,15 @@ Required Arguments:
 
 ## SegVol
 
-This repository contains a fork of the official SegVol repository as a submodule. The branch `feature_ood_med` has all of our changes and instructions for use.
+This repository contains a fork of the official SegVol repository as a submodule. To use our code, move to the `feature_ood_med` branch of the submodule.
+
+### Docker
+```
+docker build -t seg_vol SegVol/.
+```
+```
+docker run -it --rm -v $(pwd):/workspace seg_vol
+```
 
 ## CLIP-Driven Universal Model
 
