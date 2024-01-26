@@ -33,6 +33,8 @@ Required Arguments:
 
 ## SegVol
 
+This repository contains a fork of the official SegVol repository as a submodule. The branch `feature_ood_med` has all of our changes.
+
 ## CLIP-Driven Universal Model
 
 ## Multi-Talent
