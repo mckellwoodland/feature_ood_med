@@ -47,6 +47,8 @@ docker run -it --rm -v $(pwd):/workspace seg_vol
 
 If your system does not have internet access, download [OpenAI's CLIP model from HuggingFace](https://huggingface.co/openai/clip-vit-base-patch32) and place the files in `SegVol/model/CLIP`. If your system does have internet access, you can delete the `clip_ckpt` argument from the `SegVol/script/inference_demo.sh` script.
 
+To run the demo case, download the files from [HuggingFace](https://huggingface.co/BAAI/SegVol). Place the NIfTI files in `SegVol/data/`.
+
 ## CLIP-Driven Universal Model
 
 ## Multi-Talent
