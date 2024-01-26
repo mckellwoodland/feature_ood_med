@@ -1,3 +1,6 @@
 [submodule "CLIP-Driven-Universal-Model"]
 	path = CLIP-Driven-Universal-Model
 	url = https://github.com/mckellwoodland/CLIP-Driven-Universal-Model
+[submodule "SegVol"]
+	path = SegVol
+	url = https://github.com/mckellwoodland/SegVol.git
