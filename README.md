@@ -53,9 +53,7 @@ bash SegVol/script/inference_demo.sh
 ```
 
 To test on your own data
-1. Update the `SegVol/script/inference.sh` file with the name of your dataset.
-2. Generate the JSON file using `utils/create_json.py`. The images and corresponding labels should be in separate folders. When the file contents of the two directories are sorted, the image file should correspond to the label file.
-
+1. Generate the JSON file using `utils/create_json.py`. The images and corresponding labels should be in separate folders. When the file contents of the two directories are sorted, the image file should correspond to the label file.
 ```
 usage: create_json.py [-h] -i IMG_DIR -l LABEL_DIR -o OUTPUT_FILE
 
@@ -67,7 +65,7 @@ Required Arguments:
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
                         Path to the JSON file to be outputed.
 ```
-
+2. Update the `SegVol/script/inference.sh` file with where to put your logs and your config file.
 ## CLIP-Driven Universal Model
 
 ## Multi-Talent
