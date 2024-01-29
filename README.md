@@ -52,6 +52,22 @@ To run the demo case, download the files from [HuggingFace](https://huggingface.
 bash SegVol/script/inference_demo.sh
 ```
 
+To test on your own data
+1. Update the `SegVol/script/inference.sh` file with the name of your dataset.
+2. Generate the JSON file using `utils/create_json.py`. The images and corresponding labels should be in separate folders. When the file contents of the two directories are sorted, the image file should correspond to the label file.
+
+```
+usage: create_json.py [-h] -i IMG_DIR -l LABEL_DIR -o OUTPUT_FILE
+
+Required Arguments:
+  -i IMG_DIR, --img_dir IMG_DIR
+                        Path to the image directory.
+  -l LABEL_DIR, --label_dir LABEL_DIR
+                        Path to the label directory.
+  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+                        Path to the JSON file to be outputed.
+```
+
 ## CLIP-Driven Universal Model
 
 ## Multi-Talent
